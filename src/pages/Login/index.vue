@@ -1,6 +1,6 @@
 <template>
     <div>
-        我是登录
+        我是登陆
     </div>
 </template>
 
@@ -10,6 +10,6 @@
     }
 </script>
 
-<style lang="scss" scoped>
+<style lang="less" scoped>
 
 </style>
