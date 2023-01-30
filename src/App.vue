@@ -4,9 +4,7 @@
     <!-- 路由组件出口的地方 -->
     <router-view></router-view>
     <!-- 在Home、Search显示的，在登陆注册隐藏 -->
-    <Footer
-      v-show="$route.path == '/home' || $route.path == '/search'"
-    ></Footer>
+    <Footer v-show="$route.meta.show"></Footer>
   </div>
 </template>
 

@@ -16,6 +16,7 @@ export default new VueRouter({
     {
       path: "/home",
       component: Home,
+      meta: { show: true },
     },
     {
       path: "/login",
@@ -26,8 +27,10 @@ export default new VueRouter({
       component: Register,
     },
     {
-      path: "/search",
+      path: "/search/:keyword",
       component: Search,
+      meta: { show: true },
+      name: "search",
     },
     // 重定向，在项目跑起来的时候，访问/会定向访问首页
     {
